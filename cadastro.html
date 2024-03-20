@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white; /* Cor de fundo suave */
+            color: #0f0f0f; /* Cor do texto */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background-color: rgba(139, 215, 238, 0.411); /* Cor de fundo do container */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(147, 194, 235, 0.3); /* Sombra suave */
+            width: 300px;
+        }
+        .login-container h2 {
+            text-align: center;
+        }
+        .login-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .login-form label {
+            margin-bottom: 10px;
+        }
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            padding: 10px;
+            border: 1px solid #ccc; /* Borda suave */
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .login-form input[type="submit"] {
+            background-color: #141416; /* Cor do botão de envio */
+            color: #ece8e8; /* Cor do texto do botão */
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-form input[type="submit"]:hover {
+            background-color: #17191a; /* Cor do botão ao passar o mouse */
+        }
+    </style>
+</head>
+<body> 
+    <div class="login-container">
+        <h2>Cadastrar</h2>
+        <form class="login-form" action="cadastro.php" method="POST">
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome"> 
+            <label for="email">E-mail: </label>
+            <input type="text" name="email" id="email"> 
+            <label for="senha">Senha: </label>
+            <input type="password" name="senha" id="senha"> 
+            <input type="submit" value="Cadastrar">
+            <a href="login.html">Voltar a pagina de Login</a>
+        </form>
+    </div>
+</body>
+</html>
